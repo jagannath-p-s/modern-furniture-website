@@ -1,0 +1,1 @@
+https://www.regalindustry.in/regal_catalogue.pdf
