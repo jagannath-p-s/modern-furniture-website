@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regal Industries - Best wholesale furniture supplier in Kerala</title>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  <!--=============== ICONS ===============-->
+  <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <!--=============== GOOGLE FONT ===============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <!--=============== FAVICON ===============-->
+  <link
+    rel="shortcut icon"
+    href="./assets/images/logo.png"
+    type="image/x-icon"
+  />
+  <script>
+    const images = ['home.jpg', 'home2.jpg', 'home3.jpg'];
+
+    images.forEach((image) => {
+      const img = new Image();
+      img.src = `./assets/images/${image}`;
+    });
+  </script>
+
+  <!-- Simple CSS animations for scroll effects -->
+  <style>
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a
+        href="#home"
+        class="nav-logo"
+        style="font-family: Arial, Helvetica, sans-serif; letter-spacing: -0.4px;"
+        ><img
+          src="./assets/images/logo.png"
+          class="nav-logo-img"
+          style="margin-right: 3px;"
+        />Regal Industries</a
+      >
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#products" class="nav-link" id="company">Products</a>
+          </li>
+          <li class="nav-item"><a href="#aboutus" class="nav-link">About us</a></li>
+          <li class="nav-item">
+            <a href="#testimony" class="nav-link">Testimonials</a>
+          </li>
+        </ul>
+        <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
+      </div>
+      <div class="nav-toggle" id="nav-toggle"><i class="bx bx-align-right"></i></div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== HERO ===============-->
+    <section class="home section" id="home">
+      <div class="overlay"></div>
+      <div class="bg-image"></div>
+      <div class="home-container container">
+        <h1 class="home-title">Regal Industries</h1>
+        <div class="home-icons" style="color: aliceblue">
+          <p class="home-desc">
+            Quality | Affordability | Craftsmanship <br />
+            Find various types of home, office and business products. Connect with
+            us and order the best products of your choice, we are the best furniture
+            manufacturers and wholesalers in Kerala with all India delivery for bulk
+            orders
+          </p>
+          <div class="home-icons">
+            <div class="flex1">
+              <a
+                href="https://api.whatsapp.com/send/?phone=+918891764322&text&type=phone_number&app_absent=0"
+                class="bx bxl-whatsapp change-theme"
+              ></a>
+              <a
+                href="https://www.facebook.com/p/Anusree-Steel-Industries-100067586967107/"
+                class="bx bxl-facebook change-theme"
+              ></a>
+              <a
+                href="https://www.instagram.com/regal_steel_industries/"
+                class="bx bxl-instagram change-theme"
+              ></a>
+              <a href="tel:phonenumber" class="bx bx-phone change-theme"></a>
+              <a id="DownloadLink" class="bx bx-download change-theme" href="http://192.168.1.62:5500/regal_catalogue.pdf"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== COLLECTION ===============-->
+    <section class="collection section" id="collection">
+      <div class="collection-container container">
+        <div class="collection-data">
+          <h1
+            class="collection-title"
+            style="margin-left: 40px; margin-bottom: 27px"
+          >
+            Why should <span class="span">you choose our products?</span>
+          </h1>
+        </div>
+
+        <ul class="collection-list grid">
+          <li>
+            <div class="collection-card">
+              <div class="card-icon">
+                <i
+                  class="bx bxs-badge-check change-theme collection-theme"
+                ></i>
+              </div>
+              <div>
+                <h3 class="collection-list-title">Best Quality</h3>
+                <p class="collection-list-desc">
+                  We always prioritize customer satisfaction over everything.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="collection-card">
+              <div class="card-icon">
+                <i class="bx bxs-plane-alt change-theme collection-theme"></i>
+              </div>
+              <div>
+                <h3 class="collection-list-title">All India Delivery</h3>
+                <p class="collection-list-desc">
+                  We already have customers from all over India, we have all India
+                  delivery for bulk orders
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="collection-card">
+              <div class="card-icon">
+                <i
+                  class="bx bxs-check-shield change-theme collection-theme"
+                ></i>
+              </div>
+              <div>
+                <h3 class="collection-list-title">Durability</h3>
+                <p class="collection-list-desc">
+                  Our products are very durable due to uncompromise quality checks
+                  before each sale
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--=============== COMPANY ===============-->
+    <section class="store" id="about" style="background-color: #f5f5f5">
+        <div class="title-wrapper section container">
+          <h1 class="store-title">Customers</h1>
+          <p class="store-desc">
+            We deliver furniture solutions tailored for offices, auditoriums,
+            hospitals, schools, colleges, and more. Our range includes ergonomic
+            office chairs, desks, study pods, auditorium seating, bunker beds, and
+            many other bulk-purchased items
+          </p>
+        </div>
+      
+        <div class="store-scroll-container">
+          <ul class="store-list">
+            <li class="store-item">
+              <div class="store-card has-bg-image has-after"
+                style="background-image: url('https://i.pinimg.com/564x/75/bb/7a/75bb7ad43a5ce65090276c92d976f863.jpg')">
+                <div class="store-content">
+                  <h3 class="store-content-title">Offices</h3>
+                </div>
+              </div>
+            </li>
+      
+            <li class="store-item">
+              <div class="store-card has-bg-image has-after"
+                style="background-image: url('https://i.pinimg.com/564x/6e/0a/9f/6e0a9f98bc6a042b92ecbe0317b94edc.jpg')">
+                <div class="store-content">
+                  <h3 class="store-content-title">Colleges</h3>
+                </div>
+              </div>
+            </li>
+      
+            <li class="store-item">
+              <div class="store-card has-bg-image has-after"
+                style="background-image: url('https://i.pinimg.com/564x/03/67/a2/0367a21ba305099d376b5f4034866802.jpg')">
+                <div class="store-content">
+                  <h3 class="store-content-title">Hospitals</h3>
+                </div>
+              </div>
+            </li>
+      
+            <li class="store-item">
+              <div class="store-card has-bg-image has-after"
+                style="background-image: url('https://img.freepik.com/premium-photo/empty-auditorium-with-rows-seats-before-event-starts-created-with-generative-ai_419341-34891.jpg?w=360')">
+                <div class="store-content">
+                  <h3 class="store-content-title">Auditoriums</h3>
+                </div>
+              </div>
+            </li>
+      
+            <li class="store-item">
+              <div class="store-card has-bg-image has-after"
+                style="background-image: url('https://img.freepik.com/free-photo/restaurant-tables_1162-181.jpg?t=st=1717224547~exp=1717228147~hmac=8cc8ebe3be43fda617ed5050e398ff78238798b83366ca3f9035a1fb84a684fd&w=740')">
+                <div class="store-content">
+                  <h3 class="store-content-title">Restaurants</h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    <!--=============== STORE ===============-->
+    <section class="store" id="products">
+      <div class="title-wrapper section container">
+        <h1 class="store-title">New Products</h1>
+        <p class="store-desc">
+          This beautifully crafted piece of furniture will add a touch of elegance
+          and sophistication to any room.
+        </p>
+      </div>
+
+      <ul class="parallax-store-list">
+        <li class="parallax-store-item">
+          <img
+            class="parallax-store-image"
+            src="./assets/images/test.png"
+            alt="the back of random person"
+          />
+        </li>
+        <li class="parallax-store-item">
+          <img
+            class="parallax-store-image"
+            src="./assets/images/test2.png"
+            alt="the back of random person"
+          />
+        </li>
+        <li class="parallax-store-item">
+          <img
+            class="parallax-store-image"
+            src="./assets/images/test3.png"
+            alt="the back of random person"
+          />
+        </li>
+        <li class="parallax-store-item">
+            <img
+              class="parallax-store-image"
+              src="./assets/images/test3.png"
+              alt="the back of random person"
+            />
+          </li>
+      </ul>
+
+      <!-- Add catalog section below product list -->
+      <div class="catalog-section fade-in">
+        <div class="catalog-text">
+          <h3>Download Our Product Catalog</h3>
+          <p>
+            Explore our complete range of furniture solutions for offices,
+            educational institutions, and more. Our catalog features detailed
+            specifications, dimensions, and pricing information for bulk orders.
+          </p>
+        </div>
+
+        <div class="catalog-right">
+          <div class="qr-container">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://192.168.1.62:5500/regal_catalogue.pdf"
+              alt="Catalog QR Code"
+              class="qr-code"
+            />
+            <div class="qr-text">Scan to download</div>
+          </div>
+          <a
+            href="./regal_catalogue.pdf"
+            download
+            class="catalog-button"
+          >
+            <i class="bx bx-download"></i>
+            Download Catalog
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== CONTACT ===============-->
+    <section class="contact section container" id="contact">
+      <h2 class="section-title">What our happy <br /> customers say</h2>
+      <p class="section-subtitle">
+        Get to know what people say about our products.
+      </p>
+
+      <div class="contact-container swiper">
+        <div class="swiper-wrapper">
+          <article class="contact-card swiper-slide">
+            <i class="bx bxs-quote-left contact-theme"></i>
+            <p class="contact-message">
+              I purchased 40 office chairs from Regal Industries and I must say,
+              I'm thoroughly impressed. The quality is top-notch, surpassing my
+              expectations. Their pricing is unbeatable. I highly recommend Regal
+              Industries to anyone looking for quality furniture
+            </p>
+            <h3 class="contact-title">Sneha </h3>
+            <span class="contact-span">Customer</span>
+          </article>
+          <article class="contact-card swiper-slide">
+            <i class="bx bxs-quote-left contact-theme"></i>
+            <p class="contact-message">
+              I recently purchased chairs and table for my restaurant business and
+              have been extremely impressed with the quality of the product. It is
+              well-made, and has exceeded my expectations in every way. The
+              customer service provided by the company was also excellent, and I
+              would highly recommend regal products to others.
+            </p>
+            <h3 class="contact-title">Varun Raj</h3>
+            <span class="contact-span">Customer</span>
+          </article>
+          <article class="contact-card swiper-slide">
+            <i class="bx bxs-quote-left contact-theme"></i>
+            <p class="contact-message">
+              Regal Industries has set a benchmark in furniture quality. The
+              product's design, durability, and performance are outstanding. Not
+              to mention, their pricing is the best in Kerala, making them the best
+              choice for furniture shopping.
+            </p>
+            <h3 class="contact-title">Roy Davis</h3>
+            <span class="contact-span">Customer</span>
+          </article>
+          <article class="contact-card swiper-slide">
+            <i class="bx bxs-quote-left contact-theme"></i>
+            <p class="contact-message">
+              I recently bought furniture from them and I'm extremely satisfied.
+              The product quality is just superb, and  What's best is their pricing,
+              which is quite competitive without compromising on quality
+            </p>
+            <h3 class="contact-title">Thomas Issac</h3>
+            <span class="contact-span">Customer</span>
+          </article>
+        </div>
+        <div class="swiper-button-next"><i class="bx bx-right-arrow-alt"></i></div>
+        <div class="swiper-button-prev"><i class="bx bx-left-arrow-alt"></i></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- history section -->
+  <section class="contact section container" id="contact">
+    <h2 class="section-title">About Us</h2>
+    <p class="section-subtitle"> </p>
+    <div class="history-container">
+      <!-- Decorative corners -->
+      <div class="corner-decoration top-left"></div>
+      <div class="corner-decoration top-right"></div>
+      <div class="corner-decoration bottom-left"></div>
+      <div class="corner-decoration bottom-right"></div>
+
+      <div class="history-timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <div class="timeline-year">2006</div>
+            <div class="timeline-text">
+              Regal Industries started its humble journey with a commitment to
+              delivering high-quality steel products. Established by Mr. Ravindran
+              in Changaramkulam, Kerala.
+            </div>
+          </div>
+          <div class="timeline-image">
+            <img src="./assets/hisimages/his1.jpg" alt="Regal Industries in 2006" />
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <div class="timeline-year">2014</div>
+            <div class="timeline-text">
+              The company embarked on a significant transformation, relocating to
+              Kappur in the Palakkad district. This move marked a new phase of
+              expansion and ambition, further highlighted by an inauguration event
+              attended by MLA VT Balram.
+            </div>
+          </div>
+          <div class="timeline-image">
+            <img src="./assets/hisimages/his3.jpg" alt="Relocation to Kappur" />
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <div class="timeline-year">Present Day</div>
+            <div class="timeline-text">
+              Today, under the Directorship of Vishnu Ravindran, Regal Steel
+              Industries offers an extensive range of over 100 products,
+              specializing in powder-coated items known for their durability and
+              quality. The company provides a variety of furniture for auditoriums,
+              banks, and educational institutions, fulfilling bulk orders throughout
+              Kerala.
+            </div>
+          </div>
+          <div class="timeline-image">
+            <img src="./assets/hisimages/his7.jpg" alt="Modern Regal Industries" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add this section where you want the videos to appear -->
+  <section class="video-section1">
+    <div class="video-container1">
+      <div class="video-item1">
+        <video poster="assets/images/submagic_thumbnail_480x853 (1).jpg">
+          <source
+            src="assets/images/SaveVid_Net_AQOyPqsH9qh2gP1GmZYqFZ9bTs3UpaiKs1kZQ3OYpPs5pwFZF1q.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="play-button1">
+          <i class="bx bx-play"></i>
+        </div>
+      </div>
+      <div class="video-item1">
+        <video poster="assets/images/submagic_thumbnail_480x853 (2).jpg">
+          <source
+            src="assets/images/SaveVid_Net_AQNw1WcHX_AngvPU_O9EQd60JJmD2wbqeAsl1Ip0BocEJBoQ1U7V0TcVk.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="play-button1">
+          <i class="bx bx-play"></i>
+        </div>
+      </div>
+      <div class="video-item1">
+        <video poster="assets/images/submagic_thumbnail_480x853.jpg">
+          <source
+            src="assets/images/SaveVid_Net_AQPHZclXjtKIMvRxxx3u2Ei54B5oodPYN7wU53rnn7JTluH_RCx.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="play-button1">
+          <i class="bx bx-play"></i>
+        </div>
+      </div>
+      <div class="video-item1">
+        <video poster="assets/images/submagic_thumbnail_480x856.jpg">
+          <source
+            src="assets/images/video_2025-01-18_13-17-01.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="play-button1">
+          <i class="bx bx-play"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Icon -->
+  <a
+    href="https://api.whatsapp.com/send/?phone=+918891764322&text=Hello!"
+    target="_blank"
+    class="floating-whatsapp"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="bx bxl-whatsapp"></i>
+  </a>
+  <!--=============== FOOTER ===============-->
+  <footer class="footer section">
+    <div class="footer-container container grid">
+      <div class="footer-content grid">
+        <!-- footer 1st -->
+        <div class="footer-data">
+          <h3 class="footer-subtitle">Quick Links</h3>
+          <ul>
+            <li class="footer-item">
+              <a href="#home" class="footer-link">Home</a>
+            </li>
+            <li class="footer-item">
+              <a href="#products" class="footer-link">Products </a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#aboutus" class="footer-link">About</a>
+            </li>
+            <li class="footer-item">
+              <a href="#aboutus" class="footer-link">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+        <!-- footer 2nd -->
+        <div class="footer-data">
+          <h3 class="footer-subtitle">Products</h3>
+          <ul>
+            <li class="footer-item">
+              <a id="downloadLink2" class="footer-link" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://192.168.1.62:5500/regal_catalogue.pdf">Download Catalogue</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#products" class="footer-link">Top products</a>
+            </li>
+            <li class="footer-item"></li>
+          </ul>
+        </div>
+        <!-- footer 3rd -->
+        <div class="footer-data">
+          <h3 class="footer-subtitle">Social Media</h3>
+          <ul>
+            <li class="footer-item">
+              <a
+                href="https://www.facebook.com/p/Anusree-Steel-Industries-100067586967107/"
+                class="footer-link"
+                >Facebook</a
+              >
+            </li>
+            <li class="footer-item">
+              <a
+                href="https://www.instagram.com/regal_steel_industries/"
+                class="footer-link"
+                >Instagram</a
+              >
+            </li>
+            <li class="footer-item">
+              <a
+                href="https://api.whatsapp.com/send/?phone=+918891764322&text&type=phone_number&app_absent=0"
+                class="footer-link"
+                >Whatsapp</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="mailto:anusreesteel@gmail.com" class="footer-link">Mail</a>
+            </li>
+          </ul>
+        </div>
+        <!-- footer 4th -->
+        <div class="footer-data">
+          <h3 class="footer-subtitle">Information</h3>
+          <ul>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Company</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer rights -->
+      <div class="footer-rights">
+        <a
+          href="index.html"
+          style="color: grey; display: flex; align-items: center"
+        >
+          <img
+            src="./assets/images/logo.png"
+            style="width: 25px; margin-right: 5px"
+          />
+          Regal industries &#0169;
+        </a>
+        <div class="footer-terms">
+          <a
+            href="https://github.com/mde3"
+            target="_blank"
+            class="footer-terms-link rights-link"
+            style="color: grey; font-weight: 100"
+            > Crafted by Whitebranding </a
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script>
+    // Video player functionality
+    document.addEventListener('DOMContentLoaded', function () {
+      const videos = document.querySelectorAll('.video-item1 video');
+      const playButtons = document.querySelectorAll('.play-button1');
+
+      videos.forEach((video, index) => {
+        video.addEventListener('click', function () {
+          const button = playButtons[index];
+
+          // Pause all other videos
+          videos.forEach((otherVideo, otherIndex) => {
+            if (otherIndex !== index) {
+              otherVideo.pause();
+              playButtons[otherIndex].style.display = 'flex';
+            }
+          });
+
+          // Toggle current video
+          if (video.paused) {
+            video.play();
+            button.style.display = 'none';
+          } else {
+            video.pause();
+            button.style.display = 'flex';
+          }
+        });
+
+        // Show play button when video ends
+        video.addEventListener('ended', function () {
+          playButtons[index].style.display = 'flex';
+        });
+      });
+
+      // Play button click handler
+      playButtons.forEach((button, index) => {
+        button.addEventListener('click', function () {
+          const video = videos[index];
+          video.play();
+          button.style.display = 'none';
+
+          // Pause all other videos
+          videos.forEach((otherVideo, otherIndex) => {
+            if (otherIndex !== index) {
+              otherVideo.pause();
+              playButtons[otherIndex].style.display = 'flex';
+            }
+          });
+        });
+      });
+    });
+  </script>
+  <!--=============== MAIN JS ===============-->
+  <script src="./assets/js/main.js"></script>
+
+  <!-- Optional: JavaScript to add scroll-based visibility for fade-in elements -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const faders = document.querySelectorAll('.fade-in');
+
+      const appearOptions = {
+        threshold: 0.2,
+        rootMargin: "0px 0px -50px 0px"
+      };
+
+      const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, appearOptions);
+
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+      });
+    });
+  </script>
+</body>
+</html>
