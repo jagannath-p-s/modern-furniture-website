@@ -59,3 +59,22 @@ let swiperTestimonals = new Swiper(".contact-container" , {
         },
     },
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navMenu = document.getElementById('nav-menu');
+    const navToggle = document.getElementById('nav-toggle');
+    
+    // Function to check if a click is outside the menu and toggle button
+    function handleClickOutside(event) {
+        const isClickInsideMenu = navMenu.contains(event.target);
+        const isClickOnToggle = navToggle.contains(event.target);
+        
+        // If menu is open (has show-menu class) and click is outside menu and toggle
+        if (navMenu.classList.contains('show-menu') && !isClickInsideMenu && !isClickOnToggle) {
+            navMenu.classList.remove('show-menu');
+        }
+    }
+
+    // Add click event listener to the document
+    document.addEventListener('click', handleClickOutside);
+});
